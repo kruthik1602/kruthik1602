@@ -38,7 +38,7 @@
   </a>
 </p>
 
-> 🔧 **Note:** Replace `your-portfolio-url.com`, `your-linkedin-id`, and `your-resume-link.com` with your actual links.
+
 
 ---
 
@@ -61,8 +61,7 @@ This repo contains my **single-page, high-impact portfolio** built as a standalo
 
 ### 🔗 Live Portfolio
 
-- 🌐 **Live Site:** `https://your-portfolio-url.com`  
-- 💾 **Single File Version:** `kruthik_portfolio_single_file.html` (all styles + JS embedded)  
+- 🌐 **Live Site:** `h[ttps://your-portfolio-url.com](https://kruthikreddy.vercel.app/)`  
 
 ---
 
