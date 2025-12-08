@@ -238,26 +238,15 @@ Each card on the portfolio page links to a **real, hosted project**:
 
 ## 📈 GitHub Analytics
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=kruthik1602&show_icons=true&theme=github_dark&hide_border=true"
-    alt="GitHub stats"
-  />
-</p>
+<!-- Overall stats -->
+[![Kruthik's GitHub stats](https://github-readme-stats.vercel.app/api?username=kruthik1602&show_icons=true&theme=github_dark&hide_border=true&cache_seconds=1800)](https://github.com/anuraghazra/github-readme-stats)
 
-<p align="center">
-  <img
-    src="https://github-readme-streak-stats.herokuapp.com/?user=kruthik1602&theme=github-dark&hide_border=true"
-    alt="GitHub streak"
-  />
-</p>
+<!-- Streak (uses official Demolab host) -->
+[![GitHub Streak](https://streak-stats.demolab.com?user=kruthik1602&theme=github-dark&hide_border=true)](https://git.io/streak-stats)
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=kruthik1602&layout=compact&theme=github_dark&hide_border=true"
-    alt="Top languages"
-  />
-</p>
+<!-- Top languages -->
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kruthik1602&layout=compact&theme=github_dark&hide_border=true&cache_seconds=1800)](https://github.com/anuraghazra/github-readme-stats)
+
 
 ---
 
