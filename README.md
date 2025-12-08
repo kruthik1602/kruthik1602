@@ -1,3 +1,9 @@
+<p align="center">
+  <!-- Header Banner -->
+  <img src="https://raw.githubusercontent.com/kruthik1602/kruthik1602/main/assets/header-banner.svg" 
+       alt="Kruthik Reddy – Data Analytics & Engineering Portfolio Banner" />
+</p>
+
 <h1 align="center">👋 Hey, I'm Kruthik Reddy Theepireddy</h1>
 
 <p align="center">
@@ -26,7 +32,7 @@
   </a>
   
   <!-- Resume -->
-  <a href="resume.pdf">
+  <a href="https://your-resume-link.com">
     <img src="https://img.shields.io/badge/Resume-Download-FFB300?style=for-the-badge&logo=readme&logoColor=white" alt="resume" />
   </a>
 </p>
@@ -67,24 +73,24 @@ The portfolio leans heavily on **CSS, JS, and SVG-friendly animation patterns** 
 
 - **Staggered Hero Title Animation**  
   The main headline lines (`Build Data Solutions / like a startup / even if you aren't one`) animate in with:
-  - Per-line staggered entrance
-  - Smooth `transform + opacity` transitions
+  - Per-line staggered entrance  
+  - Smooth `transform + opacity` transitions  
   - Initialized via `initHeroAnimation()` on `DOMContentLoaded`
 
 - **Horizontal Marquee Strip**  
   A continuous marquee showing roles like `DATA ANALYST · DATA ENGINEER · PYTHON DEVELOPER · TABLEAU EXPERT · POWER BI PRO`:
-  - Infinite `@keyframes scroll-left` animation
-  - GPU-friendly transforms for smooth performance
+  - Infinite `@keyframes scroll-left` animation  
+  - GPU-friendly transforms for smooth performance  
 
 - **Scroll Indicator (SVG-friendly)**  
   A vertical **scroll arrow line** under the hero:
-  - CSS `@keyframes scroll-down` to move the line up/down and fade it in/out
-  - Designed so it can be replaced with an **inline SVG arrow** without changing the logic
+  - CSS `@keyframes scroll-down` to move the line up/down and fade it in/out  
+  - Designed so it can be replaced with an **inline SVG arrow** without changing the logic  
 
 - **Fixed Section Counter**  
   A minimal `[ 01 / 07 ]` section counter on the right:
-  - Updated by JS on scroll via `initSectionCounter()`
-  - Highlights where you are in the page at all times
+  - Updated by JS on scroll via `initSectionCounter()`  
+  - Highlights where you are in the page at all times  
 
 ---
 
@@ -93,43 +99,41 @@ The portfolio leans heavily on **CSS, JS, and SVG-friendly animation patterns** 
 The portfolio uses **IntersectionObserver** (no heavy libraries) to animate content as it comes into view:
 
 - `.fade-in` elements:
-  - Start at `opacity: 0` and `translateY(30px)`
-  - When visible, transition to `opacity: 1` and `translateY(0)`
-  - Used on cards, sections, content blocks across the site
+  - Start at `opacity: 0` and `translateY(30px)`  
+  - When visible, transition to `opacity: 1` and `translateY(0)`  
+  - Used on cards, sections, content blocks across the site  
 
 - **Experience Cards & Project Cards**  
   Each card:
-  - Fades & slides in when entering viewport
-  - On hover, slightly **lifts** with a soft shadow and **accent glow** using `::before` pseudo-elements
-  - Gives a subtle **3D-like feel** without WebGL
+  - Fades & slides in when entering viewport  
+  - On hover, slightly **lifts** with a soft shadow and **accent glow** using `::before` pseudo-elements  
+  - Gives a subtle **3D-like feel** without WebGL  
 
 - **Before/After Comparison Section**  
   The “Before vs After using my tools” section:
-  - LEFT column (“Before”) cards describe pain points (siloed data, manual reports, quality issues)
+  - LEFT column (“Before”) cards describe pain points (siloed data, manual reports, quality issues)  
   - RIGHT column (“After”) cards describe AI-powered outcomes  
-  Each card is animated via the same scroll/fade-in system for continuity.
+  Each card is animated via the same scroll/fade-in system for continuity.  
 
 ---
 
 ### 3️⃣ Advanced Text & Metric Animations
 
-The animation JS includes reusable utilities that can drive rich text + numeric effects:
+The animation JS includes reusable utilities that can drive rich text + numeric effects, including for SVG.
 
 - **Text Reveal Animation** (`initTextRevealAnimation`)  
   For any element with `data-reveal`:
-  - JS splits text into **per-word spans**
-  - Applies staggered `animation-delay` to each word
-  - Supports **per-word reveal** (great for headings or quotes)
+  - JS splits text into **per-word spans**  
+  - Applies staggered `animation-delay` to each word  
+  - Supports **per-word reveal** (great for headings or quotes)  
+  - Can be bound to `<text>` nodes inside inline **SVG** to animate labels word-by-word  
 
 - **Number Counter Animation** (`animateCounter`)  
   For metric/achievement numbers (e.g., `30+ analytics solutions`, `1M+ records`):
-  - Smooth `0 → target` count-up effect using `requestAnimationFrame`
-  - Can be attached to KPIs like: projects shipped, datasets processed, etc.
+  - Smooth `0 → target` count-up effect using `requestAnimationFrame`  
+  - Can drive numeric values inside an **SVG dashboard / KPI panel** by updating `<text>` elements dynamically  
 
-You can hook these into future **SVG-based dashboards or logos** easily by:
-
-- Binding `data-reveal` to `<text>` labels inside SVG  
-- Using `animateCounter` to drive numeric `<text>` nodes in an SVG KPI panel
+This makes the motion system reusable across **HTML and SVG**, so hero icons, charts, or logos built in SVG can share the same animation language.
 
 ---
 
@@ -137,15 +141,15 @@ You can hook these into future **SVG-based dashboards or logos** easily by:
 
 - **Parallax Effects** (`initParallaxEffect`)  
   Elements with `[data-parallax]` respond to scroll:
-  - Subtle background shifts to create **depth**
-  - Designed to work with hero shapes, gradient blobs, or SVG illustrations
+  - Subtle background shifts to create **depth**  
+  - Designed to work with hero shapes, gradient blobs, or SVG illustrations  
 
 - **Accessibility – `prefers-reduced-motion`**  
   In `animations.css`:
   - If a user has **reduced motion** enabled:
-    - Disables non-essential animations
-    - Stops marquee and scroll arrow animations
-    - Great for accessibility & performance
+    - Disables non-essential animations  
+    - Stops marquee and scroll arrow animations  
+  - Good for accessibility & performance  
 
 ---
 
@@ -191,37 +195,36 @@ Each card on the portfolio page links to a **real, hosted project**:
 
 > Upload raw datasets → get **ready-to-run ETL pipelines** (SQL + Python + YAML)
 
-- Detects schema & data types
-- Generates cleaning + transformation logic automatically
-- Outputs DDL/DML for Postgres / MySQL / Snowflake
-- Metadata store to track schema profiles & generated artifacts
+- Detects schema & data types  
+- Generates cleaning + transformation logic automatically  
+- Outputs DDL/DML for Postgres / MySQL / Snowflake  
+- Metadata store to track schema profiles & generated artifacts  
 
 ### 2. AI Data Quality Monitor & Anomaly Detector
 
 > Treats data quality like **production monitoring**
 
-- Column-level quality checks (nulls, outliers, distribution shifts)
-- Rule-based + ML-based anomaly detection
-- Rich HTML/Streamlit reporting with flags and recommendations
-- Great for “before data goes into dashboards” governance
+- Column-level quality checks (nulls, outliers, distribution shifts)  
+- Rule-based + ML-based anomaly detection  
+- Rich HTML/Streamlit reporting with flags and recommendations  
 
 ### 3. AI Insights Dashboard (Automated Story Generator)
 
 > Turns raw data into **dashboards + narratives**
 
-- Detects dataset structure and domain
-- Builds charts (time series, bar, correlation)
-- Runs forecasting (Prophet / ARIMA) on time series
-- Uses LLM to generate **human-readable commentary** on trends
+- Detects dataset structure and domain  
+- Builds charts (time series, bar, correlation)  
+- Runs forecasting (Prophet / ARIMA) on time series  
+- Uses LLM to generate **human-readable commentary** on trends  
 
 ### 4. Pricing Strategy Intelligence Tool
 
 > Experiments with **pricing, elasticity, and risk**
 
-- Upload experiments / pricing test data
-- Simulates **“what if”** scenarios on price changes
-- Combines elasticity, A/B numbers, and forecasted revenue
-- LLM-powered narrative explaining **tradeoffs & risks**
+- Upload experiments / pricing test data  
+- Simulates **“what if”** scenarios on price changes  
+- Combines elasticity, A/B numbers, and forecasted revenue  
+- LLM-powered narrative explaining **tradeoffs & risks**  
 
 ---
 
@@ -239,7 +242,7 @@ Each card on the portfolio page links to a **real, hosted project**:
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kruthik1602&layout=compact&theme=radical" alt="Top languages" />
 </p>
 
-> Again, swap `kruthik1602` with your actual GitHub username if different.
+> Swap `kruthik1602` with your actual GitHub username if different.
 
 ---
 
