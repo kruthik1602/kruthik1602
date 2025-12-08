@@ -65,94 +65,53 @@ This repo contains my **single-page, high-impact portfolio** built as a standalo
 
 ---
 
-## 🎞️ Motion & Animation System
+### 💼 Experience
 
-The portfolio leans heavily on **CSS, JS, and SVG-friendly animation patterns** to feel like a real product site, not a static CV.
+#### Senior Data Analyst – McKesson, US  
+*Aug 2024 – Present*
 
-### 1️⃣ Hero & Global Interactions
-
-- **Staggered Hero Title Animation**  
-  The main headline lines (e.g. `Build Data Solutions / like a startup / even if you aren't one`) animate in with:
-  - Per-line staggered entrance  
-  - Smooth `transform + opacity` transitions  
-  - Initialized via `initHeroAnimation()` on `DOMContentLoaded`  
-
-- **Horizontal Marquee Strip**  
-  A continuous marquee showing roles like  
-  `DATA ANALYST · DATA ENGINEER · PYTHON DEVELOPER · TABLEAU EXPERT · POWER BI PRO`:
-  - Infinite `@keyframes scroll-left` animation  
-  - GPU-friendly transforms for smooth performance  
-
-- **Scroll Indicator (SVG-friendly)**  
-  A vertical **scroll arrow line** under the hero:
-  - CSS `@keyframes scroll-down` to move the line up/down and fade it in/out  
-  - Designed so it can be replaced with an **inline SVG arrow** without changing the logic  
-
-- **Fixed Section Counter**  
-  A minimal `[ 01 / 07 ]` section counter on the right:
-  - Updated by JS on scroll via `initSectionCounter()`  
-  - Highlights where you are in the page at all times  
+- Built and maintained **30+ analytics solutions** in Tableau and Power BI to track drug efficacy, safety, and pricing trends.  
+- Developed **dynamic pricing models** and deep dive analyses on drug performance and customer behavior, improving reimbursement strategies and boosting revenue by **12%**.  
+- Automated ETL workflows in **Alteryx + SQL** over **1M+ records**, improving data integrity by **40%** and speeding up reporting.  
+- Used **Snowflake + anomaly detection in SQL** to increase data accuracy to **98%** and accelerate query performance by **35%**.  
+- Built **Python forecasting models** for drug demand and pricing trends, improving forecast accuracy by **25%** and reducing inventory issues.  
+- Drove ML-based dashboards and automation that cut manual effort by **50%** and made insights available **30% faster**.  
+- Ran **A/B tests** on pricing and engagement strategies, improving strategic decision-making impact by **15%**.
 
 ---
 
-### 2️⃣ Scroll-Triggered Animations
+#### Graduate Teaching Assistant – Clark University, MA, US  
+*Sep 2023 – Apr 2024*
 
-The portfolio uses **IntersectionObserver** (no heavy libraries) to animate content as it comes into view:
-
-- `.fade-in` elements:  
-  - Start at `opacity: 0` and `translateY(30px)`  
-  - When visible, transition to `opacity: 1` and `translateY(0)`  
-  - Used on cards, sections, content blocks across the site  
-
-- **Experience Cards & Project Cards**  
-  Each card:
-  - Fades & slides in when entering viewport  
-  - On hover, slightly **lifts** with a soft shadow and **accent glow** using `::before` pseudo-elements  
-  - Gives a subtle **3D-like feel** without WebGL  
-
-- **Before/After Comparison Section**  
-  The “Before vs After using my tools” section:
-  - LEFT column (“Before”) cards describe pain points (siloed data, manual reports, quality issues)  
-  - RIGHT column (“After”) cards describe AI-powered outcomes  
-  Each card is animated via the same scroll/fade-in system for continuity.  
+- Guided students through **Neural Networks, TensorFlow, NLP, and Python**, improving overall class performance by **20%**.  
+- Led interactive labs on **Deep Learning, GANs, and PyTorch**, helping students ship real-world AI projects.  
+- Provided detailed feedback and 1:1 tutoring that improved project quality by **15%** and increased retention in AI courses.
 
 ---
 
-### 3️⃣ Advanced Text & Metric Animations (HTML + SVG)
+#### Systems Engineer / Data Analyst – Tata Consultancy Services, Hyderabad, India  
+*Oct 2021 – Jul 2022*
 
-The animation JS includes reusable utilities that can drive rich text + numeric effects, including for SVG.
-
-- **Text Reveal Animation** (`initTextRevealAnimation`)  
-  For any element with `data-reveal`:
-  - JS splits text into **per-word spans**  
-  - Applies staggered `animation-delay` to each word  
-  - Supports **per-word reveal** (great for headings or quotes)  
-  - Can also be bound to `<text>` nodes inside inline **SVG** to animate labels word-by-word  
-
-- **Number Counter Animation** (`animateCounter`)  
-  For metric/achievement numbers (e.g., `30+ analytics solutions`, `1M+ records`):
-  - Smooth `0 → target` count-up effect using `requestAnimationFrame`  
-  - Can drive numeric values inside an **SVG dashboard / KPI panel** by updating `<text>` elements dynamically  
-
-This makes the motion system reusable across **HTML and SVG**, so hero icons, charts, or logos built in SVG can share the same animation language.
+- Designed and delivered **15+ analytics solutions** using SQL, Python, Alteryx, and ETL pipelines to support pricing and operations.  
+- Created Tableau and Power BI dashboards that turned raw data into KPIs, improving decision-making efficiency by **40%**.  
+- Optimized **Snowflake** data processing for **1M+ records/day**, increasing performance by **25%**.  
+- Automated pipelines and Excel reporting (macros, pivots, Alteryx), cutting manual effort by **50%** and improving data accuracy.  
+- Produced ad-hoc analyses that identified automation opportunities and reduced team workload by **35%**.
 
 ---
 
-### 4️⃣ Parallax & Reduced Motion Support
+#### Technical Data Analyst – Cipla, Hyderabad, India  
+*Aug 2020 – Sep 2021*
 
-- **Parallax Effects** (`initParallaxEffect`)  
-  Elements with `[data-parallax]` respond to scroll:
-  - Subtle background shifts to create **depth**  
-  - Designed to work with hero shapes, gradient blobs, or SVG illustrations  
-
-- **Accessibility – `prefers-reduced-motion`**  
-  In `animations.css`:
-  - If a user has **reduced motion** enabled:
-    - Disables non-essential animations  
-    - Stops marquee and scroll arrow animations  
-  - Good for accessibility & performance  
+- Used **Python + advanced SQL** to collect, clean, and analyze **100K+ healthcare records/week**, ensuring high data precision.  
+- Built Tableau dashboards to visualize **patient outcomes and treatment efficacy** for clinical and business stakeholders.  
+- Applied statistical analysis and data mining (NumPy, Python) to uncover treatment patterns and support data-driven decisions.  
+- Performed EDA to speed up and improve the accuracy of healthcare study analysis and reporting.  
+- Collaborated in Agile teams (sprints, stand-ups, retros) to streamline patient data workflows.
 
 ---
+
+
 
 ## 🧰 Tech Stack
 
