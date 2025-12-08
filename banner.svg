@@ -32,7 +32,7 @@
   <rect width="1200" height="260" fill="url(#bgGradient)" />
   <rect width="1200" height="260" fill="url(#grid)" opacity="0.3" />
 
-  <!-- Floating accent blobs (for motion / “data” feel) -->
+  <!-- Floating accent blobs -->
   <circle cx="150" cy="220" r="120" fill="url(#accentGradient)">
     <animate attributeName="cy" values="220;200;220" dur="10s" repeatCount="indefinite" />
     <animate attributeName="cx" values="150;180;150" dur="11s" repeatCount="indefinite" />
@@ -43,7 +43,7 @@
     <animate attributeName="cx" values="1040;1010;1040" dur="10s" repeatCount="indefinite" />
   </circle>
 
-  <!-- Small orbiting “data points” -->
+  <!-- Small orbiting data points -->
   <circle cx="1030" cy="180" r="4" fill="#4ade80">
     <animateTransform attributeName="transform"
                       attributeType="XML"
@@ -64,7 +64,7 @@
                       repeatCount="indefinite" />
   </circle>
 
-  <!-- Left icon: simple bar chart -->
+  <!-- Left icon: bar chart -->
   <g transform="translate(70, 70)">
     <rect x="0" y="80" width="22" height="70" rx="6" fill="#0f172a" stroke="#1f2937" stroke-width="2" />
     <rect x="32" y="60" width="22" height="90" rx="6" fill="#0f172a" stroke="#1f2937" stroke-width="2" />
