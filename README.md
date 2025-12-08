@@ -1,7 +1,7 @@
 <!-- ====================== HEADER BANNER ====================== -->
 
 <p align="center">
-  <img src="./banner.svg"
+  <img src="banner.svg"
        alt="Kruthik Reddy – Data Analytics & Engineering Portfolio Banner" />
 </p>
 
