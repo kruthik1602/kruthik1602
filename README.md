@@ -23,17 +23,17 @@
   </a>
   
   <!-- Portfolio Badge -->
-  <a href="https://your-portfolio-url.com">
+  <a href="https://kruthikreddy.vercel.app/">
     <img src="https://img.shields.io/badge/Portfolio-Live-00ff88?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
   </a>
 
   <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/your-linkedin-id">
+  <a href="https://www.linkedin.com/in/kruthik-1602t/">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   
   <!-- Resume -->
-  <a href="https://your-resume-link.com">
+  <a href="Resume.docx">
     <img src="https://img.shields.io/badge/Resume-Download-FFB300?style=for-the-badge&logo=readme&logoColor=white" alt="Resume" />
   </a>
 </p>
