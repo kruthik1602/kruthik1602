@@ -1,6 +1,7 @@
+<!-- ====================== HEADER BANNER ====================== -->
+
 <p align="center">
-  <!-- Header Banner -->
-  <img src="https://raw.githubusercontent.com/kruthik1602/kruthik1602/main/assets/header-banner.svg" 
+  <img src="./banner.svg"
        alt="Kruthik Reddy – Data Analytics & Engineering Portfolio Banner" />
 </p>
 
@@ -14,7 +15,7 @@
 
 <p align="center">
   <!-- Profile Views -->
-  <img src="https://komarev.com/ghpvc/?username=kruthik1602&label=Profile%20Views&style=for-the-badge" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=kruthik1602&label=Profile%20Views&style=for-the-badge" alt="Profile views" />
   
   <!-- Followers -->
   <a href="https://github.com/kruthik1602?tab=followers">
@@ -23,21 +24,21 @@
   
   <!-- Portfolio Badge -->
   <a href="https://your-portfolio-url.com">
-    <img src="https://img.shields.io/badge/Portfolio-Live-00ff88?style=for-the-badge&logo=google-chrome&logoColor=white" alt="portfolio" />
+    <img src="https://img.shields.io/badge/Portfolio-Live-00ff88?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
   </a>
 
   <!-- LinkedIn -->
   <a href="https://www.linkedin.com/in/your-linkedin-id">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" />
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   
   <!-- Resume -->
   <a href="https://your-resume-link.com">
-    <img src="https://img.shields.io/badge/Resume-Download-FFB300?style=for-the-badge&logo=readme&logoColor=white" alt="resume" />
+    <img src="https://img.shields.io/badge/Resume-Download-FFB300?style=for-the-badge&logo=readme&logoColor=white" alt="Resume" />
   </a>
 </p>
 
-> 🔧 **Note:** Replace `kruthik1602`, `your-portfolio-url.com`, `your-linkedin-id`, and `your-resume-link.com` with your actual handles/links.
+> 🔧 **Note:** Replace `your-portfolio-url.com`, `your-linkedin-id`, and `your-resume-link.com` with your actual links.
 
 ---
 
@@ -46,7 +47,7 @@
 - 🎓 Data Analyst & Engineer with experience across **analytics, ETL, and BI**  
 - 🧪 Focused on **AI-powered data products** – ETL automation, quality monitoring, pricing, and insight generation  
 - 📊 Love taking messy real-world data → **clean pipelines, dashboards, and decision tools**  
-- 🚀 Currently working on **shipping production-grade analytics tools** that look and feel like real startup products
+- 🚀 Currently working on **shipping production-grade analytics tools** that look and feel like real startup products  
 
 ---
 
@@ -61,7 +62,7 @@ This repo contains my **single-page, high-impact portfolio** built as a standalo
 ### 🔗 Live Portfolio
 
 - 🌐 **Live Site:** `https://your-portfolio-url.com`  
-- 💾 **Single File Version:** `kruthik_portfolio_single_file.html` (all styles + JS embedded)
+- 💾 **Single File Version:** `kruthik_portfolio_single_file.html` (all styles + JS embedded)  
 
 ---
 
@@ -72,13 +73,14 @@ The portfolio leans heavily on **CSS, JS, and SVG-friendly animation patterns** 
 ### 1️⃣ Hero & Global Interactions
 
 - **Staggered Hero Title Animation**  
-  The main headline lines (`Build Data Solutions / like a startup / even if you aren't one`) animate in with:
+  The main headline lines (e.g. `Build Data Solutions / like a startup / even if you aren't one`) animate in with:
   - Per-line staggered entrance  
   - Smooth `transform + opacity` transitions  
-  - Initialized via `initHeroAnimation()` on `DOMContentLoaded`
+  - Initialized via `initHeroAnimation()` on `DOMContentLoaded`  
 
 - **Horizontal Marquee Strip**  
-  A continuous marquee showing roles like `DATA ANALYST · DATA ENGINEER · PYTHON DEVELOPER · TABLEAU EXPERT · POWER BI PRO`:
+  A continuous marquee showing roles like  
+  `DATA ANALYST · DATA ENGINEER · PYTHON DEVELOPER · TABLEAU EXPERT · POWER BI PRO`:
   - Infinite `@keyframes scroll-left` animation  
   - GPU-friendly transforms for smooth performance  
 
@@ -98,7 +100,7 @@ The portfolio leans heavily on **CSS, JS, and SVG-friendly animation patterns** 
 
 The portfolio uses **IntersectionObserver** (no heavy libraries) to animate content as it comes into view:
 
-- `.fade-in` elements:
+- `.fade-in` elements:  
   - Start at `opacity: 0` and `translateY(30px)`  
   - When visible, transition to `opacity: 1` and `translateY(0)`  
   - Used on cards, sections, content blocks across the site  
@@ -117,7 +119,7 @@ The portfolio uses **IntersectionObserver** (no heavy libraries) to animate cont
 
 ---
 
-### 3️⃣ Advanced Text & Metric Animations
+### 3️⃣ Advanced Text & Metric Animations (HTML + SVG)
 
 The animation JS includes reusable utilities that can drive rich text + numeric effects, including for SVG.
 
@@ -126,7 +128,7 @@ The animation JS includes reusable utilities that can drive rich text + numeric 
   - JS splits text into **per-word spans**  
   - Applies staggered `animation-delay` to each word  
   - Supports **per-word reveal** (great for headings or quotes)  
-  - Can be bound to `<text>` nodes inside inline **SVG** to animate labels word-by-word  
+  - Can also be bound to `<text>` nodes inside inline **SVG** to animate labels word-by-word  
 
 - **Number Counter Animation** (`animateCounter`)  
   For metric/achievement numbers (e.g., `30+ analytics solutions`, `1M+ records`):
@@ -170,7 +172,7 @@ This makes the motion system reusable across **HTML and SVG**, so hero icons, ch
 <p>
   <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white" />
   <img src="https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Plotly-DARKBLUE?logo=plotly&logoColor=white" />
+  <img src="https://img.shields.io/badge/Plotly-003B57?logo=plotly&logoColor=white" />
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white" />
 </p>
 
@@ -200,6 +202,8 @@ Each card on the portfolio page links to a **real, hosted project**:
 - Outputs DDL/DML for Postgres / MySQL / Snowflake  
 - Metadata store to track schema profiles & generated artifacts  
 
+---
+
 ### 2. AI Data Quality Monitor & Anomaly Detector
 
 > Treats data quality like **production monitoring**
@@ -207,6 +211,8 @@ Each card on the portfolio page links to a **real, hosted project**:
 - Column-level quality checks (nulls, outliers, distribution shifts)  
 - Rule-based + ML-based anomaly detection  
 - Rich HTML/Streamlit reporting with flags and recommendations  
+
+---
 
 ### 3. AI Insights Dashboard (Automated Story Generator)
 
@@ -216,6 +222,8 @@ Each card on the portfolio page links to a **real, hosted project**:
 - Builds charts (time series, bar, correlation)  
 - Runs forecasting (Prophet / ARIMA) on time series  
 - Uses LLM to generate **human-readable commentary** on trends  
+
+---
 
 ### 4. Pricing Strategy Intelligence Tool
 
@@ -231,18 +239,25 @@ Each card on the portfolio page links to a **real, hosted project**:
 ## 📈 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kruthik1602&show_icons=true&theme=radical" alt="GitHub stats" />
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=kruthik1602&show_icons=true&theme=github_dark&hide_border=true"
+    alt="GitHub stats"
+  />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kruthik1602&theme=radical" alt="GitHub streak" />
+  <img
+    src="https://github-readme-streak-stats.herokuapp.com/?user=kruthik1602&theme=github-dark&hide_border=true"
+    alt="GitHub streak"
+  />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kruthik1602&layout=compact&theme=radical" alt="Top languages" />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=kruthik1602&layout=compact&theme=github_dark&hide_border=true"
+    alt="Top languages"
+  />
 </p>
-
-> Swap `kruthik1602` with your actual GitHub username if different.
 
 ---
 
