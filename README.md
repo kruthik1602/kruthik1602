@@ -240,6 +240,6 @@ Each card on the portfolio page links to a **real, hosted project**:
 
 - 💼 LinkedIn: `www.linkedin.com/in/kruthik-1602t/`
 - 📧 Email: `kruthikreddy1602@gmail.com`  
-- 🌐 Portfolio: `www.kruthikreddy.vercel.app/`
+- 🌐 Portfolio: `https://kruthikreddy.vercel.app/`
 
 If you’re hiring for **Data Analyst / Analytics Engineer / Data Engineer** roles and want someone who ships **real tools**, feel free to reach out.
