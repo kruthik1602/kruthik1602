@@ -1,0 +1,107 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617">
+        <animate attributeName="stop-color"
+                 values="#020617; #0f172a; #020617"
+                 dur="12s"
+                 repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#1e293b">
+        <animate attributeName="stop-color"
+                 values="#1e293b; #0f172a; #1e293b"
+                 dur="12s"
+                 repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Accent gradient for circles -->
+    <radialGradient id="accentGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2937" stroke-width="0.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="260" fill="url(#bgGradient)" />
+  <rect width="1200" height="260" fill="url(#grid)" opacity="0.3" />
+
+  <!-- Floating accent blobs (for motion / “data” feel) -->
+  <circle cx="150" cy="220" r="120" fill="url(#accentGradient)">
+    <animate attributeName="cy" values="220;200;220" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="cx" values="150;180;150" dur="11s" repeatCount="indefinite" />
+  </circle>
+
+  <circle cx="1040" cy="40" r="110" fill="url(#accentGradient)" opacity="0.8">
+    <animate attributeName="cy" values="40;70;40" dur="9s" repeatCount="indefinite" />
+    <animate attributeName="cx" values="1040;1010;1040" dur="10s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Small orbiting “data points” -->
+  <circle cx="1030" cy="180" r="4" fill="#4ade80">
+    <animateTransform attributeName="transform"
+                      attributeType="XML"
+                      type="rotate"
+                      from="0 1030 180"
+                      to="360 1030 180"
+                      dur="12s"
+                      repeatCount="indefinite" />
+  </circle>
+
+  <circle cx="1120" cy="120" r="3" fill="#a5b4fc">
+    <animateTransform attributeName="transform"
+                      attributeType="XML"
+                      type="rotate"
+                      from="360 1080 140"
+                      to="0 1080 140"
+                      dur="16s"
+                      repeatCount="indefinite" />
+  </circle>
+
+  <!-- Left icon: simple bar chart -->
+  <g transform="translate(70, 70)">
+    <rect x="0" y="80" width="22" height="70" rx="6" fill="#0f172a" stroke="#1f2937" stroke-width="2" />
+    <rect x="32" y="60" width="22" height="90" rx="6" fill="#0f172a" stroke="#1f2937" stroke-width="2" />
+    <rect x="64" y="35" width="22" height="115" rx="6" fill="#0f172a" stroke="#1f2937" stroke-width="2" />
+    <rect x="96" y="20" width="22" height="130" rx="6" fill="#0f172a" stroke="#1f2937" stroke-width="2" />
+
+    <rect x="-6" y="10" width="136" height="150" rx="18" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.6" />
+
+    <!-- Glow pulse -->
+    <circle cx="62" cy="85" r="60" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.3">
+      <animate attributeName="r" values="40;65;40" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="6s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Text block -->
+  <g transform="translate(260, 85)" fill="#e5e7eb">
+    <text x="0" y="0" font-size="24" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" fill="#a5b4fc">
+      👋  Hey, I'm
+    </text>
+
+    <text x="0" y="38" font-size="34" font-weight="700" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+      Kruthik Reddy Theepireddy
+      <animate attributeName="fill"
+               values="#e5e7eb;#c4b5fd;#e5e7eb"
+               dur="8s"
+               repeatCount="indefinite" />
+    </text>
+
+    <text x="0" y="78" font-size="18" fill="#9ca3af"
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+      Data Analyst & Data Engineer · Building AI-first analytics products
+    </text>
+
+    <text x="0" y="116" font-size="14" fill="#6b7280"
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+      ETL · Analytics · Pricing · Forecasting · Data Quality · Insight Automation
+    </text>
+  </g>
+</svg>
