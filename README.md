@@ -61,7 +61,7 @@ This repo contains my **single-page, high-impact portfolio** built as a standalo
 
 ### 🔗 Live Portfolio
 
-- 🌐 **Live Site:** `h[ttps://your-portfolio-url.com](https://kruthikreddy.vercel.app/)`  
+- 🌐 **Live Site:** `https://kruthikreddy.vercel.app/`  
 
 ---
 
