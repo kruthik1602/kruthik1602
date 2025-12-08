@@ -1,252 +1,127 @@
-<h1 align="center">👋 Hey, I'm Kruthik Reddy Theepireddy</h1>
+<div align="center">
+<!-- Dynamic Header with Waving Animation -->
+<img src="https://www.google.com/search?q=https://capsule-render.vercel.app/api%3Ftype%3Dwaving%26color%3D00f2ea%26height%3D250%26section%3Dheader%26text%3DKruthik%2520Reddy%26fontSize%3D80%26animation%3DfadeIn%26fontAlignY%3D35%26desc%3DData%2520Analyst%2520%257C%2520Data%2520Engineer%2520%257C%2520Building%2520AI-First%2520Products%26descAlignY%3D55%26descAlign%3D50" alt="Kruthik Reddy Header" width="100%" />
 
-<p align="center">
-  Data Analyst & Data Engineer · Building AI-first analytics products
-</p>
-
----
-
-<p align="center">
-  <!-- Profile Views -->
-  <img src="https://komarev.com/ghpvc/?username=kruthik1602&label=Profile%20Views&style=for-the-badge" alt="profile views" />
-  
-  <!-- Followers -->
-  <a href="https://github.com/kruthik1602?tab=followers">
-    <img src="https://img.shields.io/github/followers/kruthik1602?style=for-the-badge&logo=github" alt="GitHub followers" />
-  </a>
-  
-  <!-- Portfolio Badge -->
-  <a href="https://your-portfolio-url.com">
-    <img src="https://img.shields.io/badge/Portfolio-Live-00ff88?style=for-the-badge&logo=google-chrome&logoColor=white" alt="portfolio" />
-  </a>
-
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/your-linkedin-id">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" />
-  </a>
-  
-  <!-- Resume -->
-  <a href="https://your-resume-link.com">
-    <img src="https://img.shields.io/badge/Resume-Download-FFB300?style=for-the-badge&logo=readme&logoColor=white" alt="resume" />
-  </a>
-</p>
-
-> 🔧 **Note:** Replace `kruthik1602`, `your-portfolio-url.com`, `your-linkedin-id`, and `your-resume-link.com` with your actual handles/links.
-
----
-
-## 🧭 About Me
-
-- 🎓 Data Analyst & Engineer with experience across **analytics, ETL, and BI**  
-- 🧪 Focused on **AI-powered data products** – ETL automation, quality monitoring, pricing, and insight generation  
-- 📊 Love taking messy real-world data → **clean pipelines, dashboards, and decision tools**  
-- 🚀 Currently working on **shipping production-grade analytics tools** that look and feel like real startup products
-
----
-
-## 🌀 Portfolio – Single Page Animated Website
-
-This repo contains my **single-page, high-impact portfolio** built as a standalone `index.html` (all CSS & JS inlined), optimized for:
-
-- Recruiters & hiring managers who want to **see real products in seconds**
-- Fast deploy to **GitHub Pages / Vercel / Render / any static host**
-- Clean structure: sections for **Hero → Experience → Skills → Projects → Before/After → Education → Contact**
-
-### 🔗 Live Portfolio
-
-- 🌐 **Live Site:** `https://your-portfolio-url.com`  
-- 💾 **Single File Version:** `kruthik_portfolio_single_file.html` (all styles + JS embedded)
-
----
-
-## 🎞️ Motion & Animation System
-
-The portfolio leans heavily on **CSS, JS, and SVG-friendly animation patterns** to feel like a real product site, not a static CV.
-
-### 1️⃣ Hero & Global Interactions
-
-- **Staggered Hero Title Animation**  
-  The main headline lines (`Build Data Solutions / like a startup / even if you aren't one`) animate in with:
-  - Per-line staggered entrance
-  - Smooth `transform + opacity` transitions
-  - Initialized via `initHeroAnimation()` on `DOMContentLoaded`
-
-- **Horizontal Marquee Strip**  
-  A continuous marquee showing roles like `DATA ANALYST · DATA ENGINEER · PYTHON DEVELOPER · TABLEAU EXPERT · POWER BI PRO`:
-  - Infinite `@keyframes scroll-left` animation
-  - GPU-friendly transforms for smooth performance
-
-- **Scroll Indicator (SVG-friendly)**  
-  A vertical **scroll arrow line** under the hero:
-  - CSS `@keyframes scroll-down` to move the line up/down and fade it in/out
-  - Designed so it can be replaced with an **inline SVG arrow** without changing the logic
-
-- **Fixed Section Counter**  
-  A minimal `[ 01 / 07 ]` section counter on the right:
-  - Updated by JS on scroll via `initSectionCounter()`
-  - Highlights where you are in the page at all times
-
----
-
-### 2️⃣ Scroll-Triggered Animations
-
-The portfolio uses **IntersectionObserver** (no heavy libraries) to animate content as it comes into view:
-
-- `.fade-in` elements:
-  - Start at `opacity: 0` and `translateY(30px)`
-  - When visible, transition to `opacity: 1` and `translateY(0)`
-  - Used on cards, sections, content blocks across the site
-
-- **Experience Cards & Project Cards**  
-  Each card:
-  - Fades & slides in when entering viewport
-  - On hover, slightly **lifts** with a soft shadow and **accent glow** using `::before` pseudo-elements
-  - Gives a subtle **3D-like feel** without WebGL
-
-- **Before/After Comparison Section**  
-  The “Before vs After using my tools” section:
-  - LEFT column (“Before”) cards describe pain points (siloed data, manual reports, quality issues)
-  - RIGHT column (“After”) cards describe AI-powered outcomes  
-  Each card is animated via the same scroll/fade-in system for continuity.
-
----
-
-### 3️⃣ Advanced Text & Metric Animations
-
-The animation JS includes reusable utilities that can drive rich text + numeric effects:
-
-- **Text Reveal Animation** (`initTextRevealAnimation`)  
-  For any element with `data-reveal`:
-  - JS splits text into **per-word spans**
-  - Applies staggered `animation-delay` to each word
-  - Supports **per-word reveal** (great for headings or quotes)
-
-- **Number Counter Animation** (`animateCounter`)  
-  For metric/achievement numbers (e.g., `30+ analytics solutions`, `1M+ records`):
-  - Smooth `0 → target` count-up effect using `requestAnimationFrame`
-  - Can be attached to KPIs like: projects shipped, datasets processed, etc.
-
-You can hook these into future **SVG-based dashboards or logos** easily by:
-
-- Binding `data-reveal` to `<text>` labels inside SVG  
-- Using `animateCounter` to drive numeric `<text>` nodes in an SVG KPI panel
-
----
-
-### 4️⃣ Parallax & Reduced Motion Support
-
-- **Parallax Effects** (`initParallaxEffect`)  
-  Elements with `[data-parallax]` respond to scroll:
-  - Subtle background shifts to create **depth**
-  - Designed to work with hero shapes, gradient blobs, or SVG illustrations
-
-- **Accessibility – `prefers-reduced-motion`**  
-  In `animations.css`:
-  - If a user has **reduced motion** enabled:
-    - Disables non-essential animations
-    - Stops marquee and scroll arrow animations
-    - Great for accessibility & performance
-
----
-
-## 🧰 Tech Stack
-
-### 🧠 Data & Analytics
+<!-- Social Badges - High Visibility -->
 
 <p>
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Snowflake-29B5E8?logo=snowflake&logoColor=white" />
-  <img src="https://img.shields.io/badge/Alteryx-0078AA?logo=alteryx&logoColor=white" />
-  <img src="https://img.shields.io/badge/ETL-Pipelines-00ff88" />
+<a href="https://www.linkedin.com/in/your-linkedin-id">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-Connect-0077B5%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin%26logoColor%3Dwhite" alt="LinkedIn" />
+</a>
+<a href="mailto:yourname@email.com">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Email-Contact_Me-D14836%3Fstyle%3Dfor-the-badge%26logo%3Dgmail%26logoColor%3Dwhite" alt="Email" />
+</a>
+<a href="https://your-portfolio-url.com">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Portfolio-Visit_Site-00ff88%3Fstyle%3Dfor-the-badge%26logo%3Dgoogle-chrome%26logoColor%3Dwhite" alt="Portfolio" />
+</a>
+<a href="https://your-resume-link.com">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Resume-Download_PDF-FFB300%3Fstyle%3Dfor-the-badge%26logo%3Dadobe-acrobat-reader%26logoColor%3Dwhite" alt="Resume" />
+</a>
 </p>
 
-### 📊 BI & Visualization
+<br />
 
+<!-- Intro Text -->
+
+<h3>🚀 Transforming Messy Data into Production-Grade Decisions</h3>
+</div>
+
+👨‍💻 About Me
+
+I am a Data Analyst & Engineer who doesn't just write queries—I build products. I specialize in bridging the gap between raw data infrastructure and actionable business intelligence.
+
+🔭 Currently working on: Shipping AI-powered analytics tools that function like standalone products.
+
+🤝 I help companies: Automate ETL pipelines, detect data anomalies before they hit dashboards, and simulate pricing strategies.
+
+💬 Ask me about: Python, SQL Optimization, Snowflake, and why your dashboard probably needs a data quality monitor.
+
+🛠️ Tech Stack & Arsenal
+
+<div align="center">
+
+Core Engineering
+
+Data & Cloud
+
+Visualization & BI
+
+DevOps & Tools
+
+<img src="https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Dpython,cpp,java" width="50" />
+
+<img src="https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Dpostgres,mysql,snowflake,mongo" width="65" />
+
+<img src="https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Dtableau,powerbi,plotly" width="50" />
+
+<img src="https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Dgit,docker,bash,vscode" width="65" />
+
+Python, C++, Java
+
+SQL, Snowflake, NoSQL
+
+Tableau, PowerBI
+
+Git, Docker, Bash
+
+</div>
+
+🏆 Flagship Projects
+
+Real tools solving real problems. Not just tutorials.
+
+Project
+
+Description
+
+Tech Stack
+
+🤖 AI AutoETL Generator
+
+Automated Pipeline Architect. Upload raw datasets and instantly generate ready-to-run ETL pipelines (SQL + Python). Detects schema, cleans data, and outputs production DDL/DML code.
+
+Python Pandas SQL Jinja2
+
+📉 Pricing Strategy Intelligence
+
+Risk & Elasticity Simulator. A tool to simulate "what-if" pricing scenarios. Combines elasticity modeling with A/B test data to forecast revenue trade-offs.
+
+Python Scikit-learn Streamlit
+
+🛡️ AI Data Quality Monitor
+
+The "Smoke Detector" for Data. Automated anomaly detection that flags nulls, outliers, and distribution shifts before they break your executive dashboard.
+
+Python Anomaly Detection Statistical Models
+
+📊 AI Insights Dashboard
+
+Automated Storyteller. Detects dataset structure and generates human-readable narratives alongside charts using LLMs. Turns "numbers" into "news."
+
+LLMs Prophet Plotly
+
+📈 GitHub Analytics
+
+<div align="center">
+
+
+
+
+
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3Dkruthik1602%26show_icons%3Dtrue%26theme%3Dtokyonight%26hide_border%3Dtrue%26bg_color%3D0d1117" alt="Kruthik's GitHub Stats" height="180" />
+<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3Dkruthik1602%26layout%3Dcompact%26theme%3Dtokyonight%26hide_border%3Dtrue%26bg_color%3D0d1117" alt="Top Languages" height="180" />
+
+
+
+
+
+<img src="https://www.google.com/search?q=https://github-readme-streak-stats.herokuapp.com/%3Fuser%3Dkruthik1602%26theme%3Dtokyonight%26hide_border%3Dtrue%26background%3D0d1117" alt="Streak Stats" width="80%" />
+</div>
+
+<div align="center">
 <p>
-  <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white" />
-  <img src="https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Plotly-DARKBLUE?logo=plotly&logoColor=white" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white" />
+<a href="https://www.google.com/search?q=https://linkedin.com/in/your-linkedin-id">Let's Connect on LinkedIn</a> •
+<a href="https://your-portfolio-url.com">View Full Portfolio</a>
 </p>
-
-### 🧱 Web & Infra
-
-<p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Render-00979D?logo=render&logoColor=white" />
-</p>
-
----
-
-## 🚀 Flagship Projects (from the Portfolio)
-
-Each card on the portfolio page links to a **real, hosted project**:
-
-### 1. AI AutoETL Pipeline Generator
-
-> Upload raw datasets → get **ready-to-run ETL pipelines** (SQL + Python + YAML)
-
-- Detects schema & data types
-- Generates cleaning + transformation logic automatically
-- Outputs DDL/DML for Postgres / MySQL / Snowflake
-- Metadata store to track schema profiles & generated artifacts
-
-### 2. AI Data Quality Monitor & Anomaly Detector
-
-> Treats data quality like **production monitoring**
-
-- Column-level quality checks (nulls, outliers, distribution shifts)
-- Rule-based + ML-based anomaly detection
-- Rich HTML/Streamlit reporting with flags and recommendations
-- Great for “before data goes into dashboards” governance
-
-### 3. AI Insights Dashboard (Automated Story Generator)
-
-> Turns raw data into **dashboards + narratives**
-
-- Detects dataset structure and domain
-- Builds charts (time series, bar, correlation)
-- Runs forecasting (Prophet / ARIMA) on time series
-- Uses LLM to generate **human-readable commentary** on trends
-
-### 4. Pricing Strategy Intelligence Tool
-
-> Experiments with **pricing, elasticity, and risk**
-
-- Upload experiments / pricing test data
-- Simulates **“what if”** scenarios on price changes
-- Combines elasticity, A/B numbers, and forecasted revenue
-- LLM-powered narrative explaining **tradeoffs & risks**
-
----
-
-## 📈 GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kruthik1602&show_icons=true&theme=radical" alt="GitHub stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kruthik1602&theme=radical" alt="GitHub streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kruthik1602&layout=compact&theme=radical" alt="Top languages" />
-</p>
-
-> Again, swap `kruthik1602` with your actual GitHub username if different.
-
----
-
-## 📬 Contact
-
-- 💼 LinkedIn: [`linkedin.com/in/your-linkedin-id`](https://www.linkedin.com/in/your-linkedin-id)  
-- 📧 Email: `yourname@email.com`  
-- 🌐 Portfolio: [`your-portfolio-url.com`](https://your-portfolio-url.com)
-
-If you’re hiring for **Data Analyst / Analytics Engineer / Data Engineer** roles and want someone who ships **real tools**, feel free to reach out.
+<sub><i>"Data is what you are given; Information is what you have; Intelligence is what you use."</i></sub>
+</div>
