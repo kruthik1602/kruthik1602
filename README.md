@@ -100,7 +100,7 @@ This repo contains my **single-page, high-impact portfolio** built as a standalo
 
 ---
 
-#### Technical Data Analyst – Cipla, Hyderabad, India  
+#### Technical Data Analyst – FedEx, Hyderabad, India  
 *Aug 2020 – Sep 2021*
 
 - Used **Python + advanced SQL** to collect, clean, and analyze **100K+ healthcare records/week**, ensuring high data precision.  
